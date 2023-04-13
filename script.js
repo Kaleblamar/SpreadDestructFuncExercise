@@ -50,6 +50,8 @@ const jurassicParkMovies = [
 
 //3b. Create a function called seeJPMovies. Having only the following inside the opening and closing curly brackets of the seeJPMovies function (See below), have all six movie names display in the terminal/console when the function is run (HINT: There are at least two ways this can be done)...
 
+//function declaration
+
 function seeJPMovies({ one, two, three }, { four, five, six }) {
   console.log(one);
   console.log(two);
@@ -60,3 +62,16 @@ function seeJPMovies({ one, two, three }, { four, five, six }) {
 }
 
 seeJPMovies(...jurassicParkMovies);
+
+//arrow function
+
+seeJPMovies2 = ({ one, two, three }, { four, five, six }) => {
+  console.log(one);
+  console.log(two);
+  console.log(three);
+  console.log(four);
+  console.log(five);
+  console.log(six);
+};
+
+seeJPMovies2(...jurassicParkMovies);
